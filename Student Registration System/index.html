@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="icon" type="image/x-icon" href="icon\favicon.ico">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Student Registration System</h1>
+            <p>This application is used to store Student Data i.e, Studend's Name, Student's ID, Student's Email, Student's Contact details.</p>
+        </div>
+        <div class="inner-container">
+            <div class="registration-form">
+                <form action="" class="form" id="StudentForm">
+                    <label for="name">Student's Name:</label>
+                    <input type="text" class="input-name" id="name" autocomplete="off" required>
+                    <label for="id">Student ID:</label>
+                    <input type="number" class="input-id" id="id" autocomplete="off" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" class="email" id="email" autocomplete="off" required>
+                    <label for="contact">Contact No.:</label>
+                    <input type="number" name="number" id="contact" autocomplete="off" required>
+                    <button type="submit" class="addButton" id="button">Add</button>
+                </form>
+    
+            </div>
+            <div class="display" id="studentList">              
+                <table class="student-list" id="students">
+                    <thead>
+                        <tr class="s-row">
+                            <th class="Sname">Name</th>
+                            <th class="Sid">ID</th>
+                            <th class="Semail">E-mail</th>
+                            <th class="Scontact">Contact</th>
+                            <th></th>
+                            <th></th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody class="student-data" id="student-data">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
